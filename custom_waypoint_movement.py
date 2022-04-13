@@ -88,7 +88,9 @@ async def run():
                 drone_alt: float=position.relative_altitude_m
 
                 #checks if location is reached and moves on if so
-                if ((round(drone_lat,2)==round(lats[point],2)) and (round(drone_long,2)==round(longs[point],2)) and (round(drone_alt,2)==round(altitudes[point],2))):
+                if ((round(drone_lat,1)==round(lats[point],1)) and 
+                    (round(drone_long,1)==round(longs[point],1)) and 
+                    (round(drone_alt,1)==round(altitudes[point],1))):
                     location_reached=True
                     print("arrived, moving on")
                     break
