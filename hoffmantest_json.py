@@ -24,7 +24,7 @@ def waypoint_parsing(filename: str) -> List[Dict[str,float]]:
         a string identifier and float for lattitude, longitude and altitude
     """
     with open(filename, 'r') as f:
-        data_set: Dict[str, List] = json.load(f, )
+        data_set = json.load(f)
     # print(data_set)
 
     waypoint_Locs: List[Dict[str,float]] = []
@@ -48,7 +48,7 @@ def stationary_obstacle_parsing(filename: str) -> List[Dict[str, float]]:
             list of dictionaries containing latitude, longitude, radius, and height of obstacles
     """
     with open(filename, 'r') as f:
-        data_set: Dict[str, List] = json.load(f, )
+        data_set: Dict[str, List] = json.load(f)
 
     stationary_obs: List[Dict[str, float]] = [obs for obs in data_set["stationaryObstacles"]]
 
@@ -126,7 +126,7 @@ async def run() -> None:
     lats: List[float]=[]
     longs: List[float]=[]
     altitudes: List[float]=[]
-    waypoints: List[Dict[str,float]] =waypoint_parsing("test_data.json")
+    waypoints: List[Dict[str,float]] = waypoint_parsing("test_data.json")
     stationary_obs: List[Dict[str, float]] = stationary_obstacle_parsing("test_data.json")
     for i in waypoints:
         for key,val in i.items():
