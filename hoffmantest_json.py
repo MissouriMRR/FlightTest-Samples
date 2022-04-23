@@ -47,7 +47,7 @@ def stationary_obstacle_parsing(filename: str) -> List[Dict[str, float]]:
         List[Dict[str, float]]
             list of dictionaries containing latitude, longitude, radius, and height of obstacles
     """
-    with open(filename, 'r') as f:
+    with open(filename) as f:
         data_set: Dict[str, List] = json.load(f)
 
     stationary_obs: List[Dict[str, float]] = [obs for obs in data_set["stationaryObstacles"]]

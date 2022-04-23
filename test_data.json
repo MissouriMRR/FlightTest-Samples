@@ -20,7 +20,7 @@
 	  "longitude": -91.6570381
 	}
     ]
-  }
+  },
 
   "waypoints": [
     {
@@ -49,6 +49,7 @@
 	"altitude": 100
     }
   ],
+ 
   "stationaryObstacles": [
     {
 	"latitude": 37.899746799,
