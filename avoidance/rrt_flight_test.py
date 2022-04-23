@@ -63,7 +63,7 @@ def rrt_flight_test(obstacles: List[Dict[str, float]], waypoints: List[Dict[str,
     # print(waypoints)
     # print(boundary)
 
-    zone_num = helpers.get_zone_info(boundary)
+    zone_num, zone_char = helpers.get_zone_info(boundary)
 
     # Convert silly units to proper units
     obstacles = helpers.all_feet_to_meters(obstacles)
@@ -101,7 +101,7 @@ def rrt_flight_test(obstacles: List[Dict[str, float]], waypoints: List[Dict[str,
     # plotter.plot(obstacles, boundary, path=final_route)
     
     # last step converting back to lat lon
-    final_route = helpers.path_to_latlon(final_route, zone_num)
+    final_route = helpers.path_to_latlon(final_route, zone_num, zone_char)
 
     print(final_route)
     
