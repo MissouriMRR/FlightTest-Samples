@@ -9,7 +9,7 @@ import mavsdk as sdk
 import logging
 import math
 import typing
-from typing import Dict,List
+from typing import Dict, List
 from avoidance import rrt_flight_test
 
 
@@ -23,10 +23,9 @@ def waypoint_parsing(filename: str) -> List[Dict[str,float]]:
         Waypoint_Locs ([Dict[str,float]]): List of dictionaries containing 
         a string identifier and float for lattitude, longitude and altitude
     """
-    f = open(filename, )
-    data_set = json.load(f)
+    with open(filename, 'r') as f:
+        data_set: Dict[str, List] = json.load(f, )
     # print(data_set)
-    f.close()
 
     waypoint_Locs: List[Dict[str,float]] = []
 
@@ -48,12 +47,8 @@ def stationary_obstacle_parsing(filename: str) -> List[Dict[str, float]]:
         List[Dict[str, float]]
             list of dictionaries containing latitude, longitude, radius, and height of obstacles
     """
-    with open(filename) as f:
-        try:
-            data_set: Dict[str, List] = json.load(f)
-        except:
-            f.close()
-    f.close()
+    with open(filename, 'r') as f:
+        data_set: Dict[str, List] = json.load(f, )
 
     stationary_obs: List[Dict[str, float]] = [obs for obs in data_set["stationaryObstacles"]]
 

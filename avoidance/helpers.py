@@ -1,6 +1,7 @@
 from typing import Tuple
 import utm
 from shapely.geometry import Point, Polygon
+from typing import List, Dict
 
 
 def latlon_to_utm(coords: dict) -> dict:
@@ -19,7 +20,7 @@ def latlon_to_utm(coords: dict) -> dict:
     return coords
 
 
-def all_latlon_to_utm(list_of_coords: list[dict]) -> list[dict]:
+def all_latlon_to_utm(list_of_coords: List[Dict[float, float]]) -> List[Dict[float, float]]:
     """
     Converts a list of dictionarys with latlon data to add utm data
     Args:

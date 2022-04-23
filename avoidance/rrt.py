@@ -4,9 +4,9 @@ import math
 import random
 import numpy as np
 import shapely
-import helpers
+from avoidance import helpers
 import time
-import plotter
+# import plotter
 from typing import Tuple
 from shapely.geometry import Point, Polygon, LineString
 from collections import deque
@@ -355,7 +355,7 @@ if __name__ == "__main__":
     if G.success:
         path = dijkstra(G)
         path = relax_path(path, obstacle_shapes)
-        plotter.plot(obstacles, boundary, G, path, ellr, informed_boundary)
+        # plotter.plot(obstacles, boundary, G, path, ellr, informed_boundary)
     else:
         print("major error! could not find a path!")
-        plotter.plot(obstacles, boundary, G, ellr, informed_boundary)
+        # plotter.plot(obstacles, boundary, G, ellr, informed_boundary)

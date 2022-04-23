@@ -1,5 +1,5 @@
-import rrt
-import helpers
+from avoidance import rrt
+from avoidance import helpers
 import time
 from typing import Dict, List
 
