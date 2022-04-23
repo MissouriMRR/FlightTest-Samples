@@ -193,8 +193,10 @@ async def run() -> None:
     await asyncio.sleep(20)
 
     # move to each waypoint in mission
-    for point in range(len(new_path)):
-        await move_to(drone, point[0], point[1], altitudes[point])
+    i=0
+    for point in new_path:
+        await move_to(drone, point[0], point[1], 100)
+        i=i+1
 
     # return home
     print("Last waypoint reached")
