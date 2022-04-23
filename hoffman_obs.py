@@ -13,6 +13,29 @@ from typing import Dict, List
 from avoidance import rrt_flight_test
 
 
+def boundary_parsing(filename: str) -> List[Dict[str, float]]:
+    """
+    Parses the json file for all mission-critical waypoints
+    Args:
+        filename (str): name of the json file
+
+    Returns:
+        Waypoint_Locs ([Dict[str,float]]): List of dictionaries containing
+        a string identifier and float for lattitude, longitude and altitude
+    """
+    f = open(filename, )
+    data_set = json.load(f)
+    # print(data_set)
+    f.close()
+
+    boundary_Locs: List[Dict[str, float]] = []
+
+    for i in range(0, len(data_set["boundaryPoints"])):
+        boundary_Locs.append(data_set["boundaryPoints"][i])
+
+    return boundary_Locs
+
+
 def waypoint_parsing(filename: str) -> List[Dict[str, float]]:
     """
     Parses the json file for all mission-critical waypoints
@@ -132,7 +155,8 @@ async def run() -> None:
     altitudes: List[float] = []
     waypoints: List[Dict[str, float]] = waypoint_parsing("test_data.json")
     stationary_obs: List[Dict[str, float]] = stationary_obstacle_parsing("test_data.json")
-    new_path = rrt_flight_test.rrt_flight_test(stationary_obs, waypoints)
+    boundary: List[Dict[str, float]] = boundary_parsing("test_data.json")
+    new_path = rrt_flight_test.rrt_flight_test(stationary_obs, waypoints, boundary)
     for i in waypoints:
         for key, val in i.items():
             if (key == "latitude"):

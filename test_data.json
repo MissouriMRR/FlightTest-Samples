@@ -1,26 +1,26 @@
 {
-  "flyzones":{
-    "altitudeMin": 100,
-    "altitudeMax": 750,
-    "boundaryPoints": [
-    	{
-	  "latitude": 37.9008502,
-	  "longitude": -91.6615228
-	},
-	{
-	  "latitude": 37.9008129,
-	  "longitude": -91.6615335 
-	},
-	{
-	  "latitude": 37.8964543,
-	  "longitude": -91.6570381
-	},
-	{
-	  "latitude": 37.8964543,
-	  "longitude": -91.6570381
-	}
-    ]
-  },
+	"boundaryPoints": [
+		{
+		"latitude": 37.902714254272425,
+		"longitude": -91.6586912515343
+		},
+		{
+		"latitude": 37.90307066879222,
+		"longitude": -91.6687349122212
+		},
+		{
+		"latitude": 37.895630311762325,
+		"longitude": -91.66845661227704
+		},
+		{
+		"latitude": 37.89567335132015,
+		"longitude":  -91.65817573448854
+		},
+		{
+		"latitude": 37.902714254272425,
+		"longitude": -91.6586912515343
+		}
+	],
 
   "waypoints": [
     {
@@ -47,7 +47,12 @@
 	"latitude": 37.900769059,
 	"longitude": -91.665224920,
 	"altitude": 100
-    }
+    },
+    {
+	"latitude": 37.901096681,
+	"longitude": -91.6658804,
+	"altitude": 100
+	}
   ],
  
   "stationaryObstacles": [

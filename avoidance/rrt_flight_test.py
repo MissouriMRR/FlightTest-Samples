@@ -1,5 +1,6 @@
 from avoidance import rrt
 from avoidance import helpers
+from avoidance import plotter
 import time
 from typing import Dict, List
 
@@ -50,13 +51,19 @@ obstacles = [
 ]
 
 
-def rrt_flight_test(obstacles: List[Dict[str, float]], waypoints: List[Dict[str, float]]):
+def rrt_flight_test(obstacles: List[Dict[str, float]], waypoints: List[Dict[str, float]],
+                    boundary: List[Dict[str, float]]):
+    
     # Add utm coordinates to all
-    boundary = helpers.all_latlon_to_utm(flyZones["boundaryPoints"])
+    boundary = helpers.all_latlon_to_utm(boundary)
     obstacles = helpers.all_latlon_to_utm(obstacles)
     waypoints = helpers.all_latlon_to_utm(waypoints)
+    
+    # print(obstacles)
+    # print(waypoints)
+    # print(boundary)
 
-    zone_num, zone_char = helpers.get_zone_info(boundary)
+    zone_num = helpers.get_zone_info(boundary)
 
     # Convert silly units to proper units
     obstacles = helpers.all_feet_to_meters(obstacles)
@@ -65,8 +72,12 @@ def rrt_flight_test(obstacles: List[Dict[str, float]], waypoints: List[Dict[str,
     boundary_shape = helpers.coords_to_shape(boundary)
     obstacle_shapes = helpers.circles_to_shape(obstacles)
     waypoints_points = helpers.coords_to_points(waypoints)
+    
+    # plotter.plot(obstacles, boundary, path=waypoints_points)
 
     final_route = []
+
+    start_time_final_route = time.time()
 
     # run rrt on each pair of waypoints
     for i in range(len(waypoints_points) - 1):
@@ -80,11 +91,18 @@ def rrt_flight_test(obstacles: List[Dict[str, float]], waypoints: List[Dict[str,
         if G.success:
             path = rrt.dijkstra(G)
             path = rrt.relax_path(path, obstacle_shapes)
-            # plotter.plot(obstacles, boundary, G, path, ellr, informed_boundary)
-            gps_path = helpers.path_to_latlon(path, zone_num, zone_char)
-            final_route.append(gps_path)
+            for p in path:
+                final_route.append(p)
         else:
             print("major error! could not find a path!")
-            # plotter.plot(obstacles, boundary, G, ellr, informed_boundary)
+    
+    print(f"Total solving runtime = {(time.time()-start_time_final_route):.3f}s")
+    
+    # plotter.plot(obstacles, boundary, path=final_route)
+    
+    # last step converting back to lat lon
+    final_route = helpers.path_to_latlon(final_route, zone_num)
 
-        return final_route
+    print(final_route)
+    
+    return final_route

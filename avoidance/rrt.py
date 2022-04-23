@@ -6,7 +6,7 @@ import numpy as np
 import shapely
 from avoidance import helpers
 import time
-# import plotter
+from avoidance import plotter
 from typing import Tuple
 from shapely.geometry import Point, Polygon, LineString
 from collections import deque
