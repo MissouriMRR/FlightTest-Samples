@@ -190,7 +190,7 @@ async def run() -> None:
     await drone.action.takeoff()
 
     # wait for drone to take off
-    await asyncio.sleep(20)
+    await asyncio.sleep(10)
 
     # move to each waypoint in mission
     i=0
