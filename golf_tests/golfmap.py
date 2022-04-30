@@ -110,7 +110,7 @@ async def run() -> None:
     # Set map center, height & camera focal length
     lat: float = 37.9481747
     long: float = -91.7833502
-    map_height: float = 1200.0
+    map_height: float = 600.0
     altitude: int = 150
     focal_length: int = 9
 
