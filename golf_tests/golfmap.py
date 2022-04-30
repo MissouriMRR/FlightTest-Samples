@@ -107,16 +107,15 @@ async def run() -> None:
             logging.StreamHandler(sys.stdout)
         ]
     )
-
+    # Set map center, height & camera focal length
     lat: float = 37.9481747
     long: float = -91.7833502
     map_height: float = 1200.0
     altitude: int = 150
     focal_length: int = 9
 
+    # Generate waypoints to fly through for mapping
     map_path: List[Tuple[float, float]] = map_functions.map(((lat, long), map_height), altitude, focal_length)
-
-
 
     # create a drone object
     drone: System = System()

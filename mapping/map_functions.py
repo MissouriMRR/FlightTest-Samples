@@ -1,6 +1,7 @@
 #!/user/bin/python
 
 import math
+import logging
 from typing import Tuple, List
 
 # ------ GLOBAL VARIABLES ------ #
@@ -62,15 +63,15 @@ def map(
     # Units: ft
     map_w: float = (16 * map_h) / 9
 
-    # print("Map Width:", map_w)
-    # print("Map Height:", map_h)
+    logging.info("Map Width:", map_w)
+    logging.info("Map Height:", map_h)
 
     # Find center of each piece consider OVERLAP
     ft_waypoints: Tuple[float, float] = find_centers(
         map_w, map_h, cam_w, cam_h, OVERLAP
     )[0]
     col = find_centers(map_w, map_h, cam_w, cam_h, OVERLAP)[1]
-    # print("Num of waypoints:", len(ft_waypoints))
+    logging.info("Num of waypoints:", len(ft_waypoints))
 
     # Convert centers to lat, long coordinates
     coord: List[Tuple[float, float]] = coordinates(ft_waypoints, info[0], map_w, map_h)
