@@ -115,8 +115,11 @@ async def run() -> None:
 
     #create a drone object
     drone: System = System()
-    await drone.connect(system_address="udp://:14540")
+    await drone.connect(system_address="serial:///dev/ttyUSB0:921600")
 
+    #Drone configurations 
+    await drone.action.set_maximum_speed(20)
+    
     #connect to the drone
     logging.info("Waiting for drone to connect...")
     async for state in drone.core.connection_state():
