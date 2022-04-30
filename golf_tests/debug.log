@@ -1,0 +1,155 @@
+2022-04-29 18:11:46,169 [INFO] Waiting for drone to connect...
+2022-04-29 18:11:46,172 [INFO] Drone discovered!
+2022-04-29 18:11:46,172 [INFO] Waiting for drone to have a global position estimate...
+2022-04-29 18:11:47,359 [INFO] Global position estimate ok
+2022-04-29 18:11:47,360 [INFO] -- Arming
+2022-04-29 18:11:47,411 [INFO] -- Taking off
+2022-04-29 18:11:57,661 [INFO] Going to waypoint
+2022-04-29 18:12:11,026 [INFO] arrived
+2022-04-29 18:12:13,134 [INFO] Going to waypoint
+2022-04-29 18:12:31,573 [INFO] arrived
+2022-04-29 18:12:33,197 [INFO] Going to waypoint
+2022-04-29 18:12:45,932 [INFO] arrived
+2022-04-29 18:12:47,468 [INFO] Going to waypoint
+2022-04-29 18:13:13,994 [INFO] arrived
+2022-04-29 18:13:14,996 [INFO] Last waypoint reached
+2022-04-29 18:13:14,996 [INFO] Returning to home
+2022-04-29 18:13:15,024 [INFO] Staying connected, press Ctrl-C to exit
+2022-04-29 18:37:11,203 [INFO] Waiting for drone to connect...
+2022-04-29 18:37:11,210 [INFO] Drone discovered!
+2022-04-29 18:37:11,212 [INFO] Waiting for drone to have a global position estimate...
+2022-04-29 18:37:12,321 [INFO] Global position estimate ok
+2022-04-29 18:37:12,321 [INFO] -- Arming
+2022-04-29 18:37:12,347 [INFO] -- Taking off
+2022-04-29 18:37:25,272 [INFO] Going to waypoint
+2022-04-29 18:37:54,413 [INFO] arrived
+2022-04-29 18:37:56,493 [INFO] Going to waypoint
+2022-04-29 18:38:23,963 [INFO] arrived
+2022-04-29 18:38:27,880 [INFO] Going to waypoint
+2022-04-29 18:38:47,472 [INFO] arrived
+2022-04-29 18:38:49,608 [INFO] Going to waypoint
+2022-04-29 18:38:49,630 [INFO] arrived
+2022-04-29 18:38:52,648 [INFO] Going to waypoint
+2022-04-29 18:39:08,384 [INFO] arrived
+2022-04-29 18:39:11,292 [INFO] Going to waypoint
+2022-04-29 18:39:11,296 [INFO] arrived
+2022-04-29 18:39:14,256 [INFO] Going to waypoint
+2022-04-29 18:39:40,897 [INFO] arrived
+2022-04-29 18:39:41,899 [INFO] Last waypoint reached
+2022-04-29 18:39:41,899 [INFO] Returning to home
+2022-04-29 18:39:41,930 [INFO] Staying connected, press Ctrl-C to exit
+2022-04-29 18:43:35,118 [INFO] Waiting for drone to connect...
+2022-04-29 18:43:35,121 [INFO] Drone discovered!
+2022-04-29 18:43:35,122 [INFO] Waiting for drone to have a global position estimate...
+2022-04-29 18:43:36,085 [INFO] Global position estimate ok
+2022-04-29 18:43:36,086 [INFO] -- Arming
+2022-04-29 18:43:36,131 [INFO] -- Taking off
+2022-04-29 18:43:48,990 [INFO] Going to waypoint
+2022-04-29 18:44:17,989 [INFO] arrived
+2022-04-29 18:44:19,800 [INFO] Going to waypoint
+2022-04-29 18:44:37,844 [INFO] arrived
+2022-04-29 18:44:41,485 [INFO] Going to waypoint
+2022-04-29 18:45:04,443 [INFO] arrived
+2022-04-29 18:45:06,216 [INFO] Going to waypoint
+2022-04-29 18:45:06,234 [INFO] arrived
+2022-04-29 18:45:09,095 [INFO] Going to waypoint
+2022-04-29 18:45:25,500 [INFO] arrived
+2022-04-29 18:45:28,640 [INFO] Going to waypoint
+2022-04-29 18:45:28,646 [INFO] arrived
+2022-04-29 18:45:31,501 [INFO] Going to waypoint
+2022-04-29 18:45:57,068 [INFO] arrived
+2022-04-29 18:45:58,072 [INFO] Last waypoint reached
+2022-04-29 18:45:58,072 [INFO] Returning to home
+2022-04-29 18:45:58,086 [INFO] Staying connected, press Ctrl-C to exit
+2022-04-29 18:47:25,472 [INFO] Waiting for drone to connect...
+2022-04-29 18:47:25,478 [INFO] Drone discovered!
+2022-04-29 18:47:25,478 [INFO] Waiting for drone to have a global position estimate...
+2022-04-29 18:47:26,837 [INFO] Global position estimate ok
+2022-04-29 18:47:26,837 [INFO] -- Arming
+2022-04-29 18:47:26,890 [INFO] -- Taking off
+2022-04-29 18:47:38,466 [INFO] Going to waypoint
+2022-04-29 18:48:07,388 [INFO] arrived
+2022-04-29 18:48:09,541 [INFO] Going to waypoint
+2022-04-29 18:48:38,933 [INFO] arrived
+2022-04-29 18:48:40,764 [INFO] Going to waypoint
+2022-04-29 18:48:59,636 [INFO] arrived
+2022-04-29 18:49:01,298 [INFO] Going to waypoint
+2022-04-29 18:49:01,328 [INFO] arrived
+2022-04-29 18:49:04,192 [INFO] Going to waypoint
+2022-04-29 18:49:19,273 [INFO] arrived
+2022-04-29 18:49:22,615 [INFO] Going to waypoint
+2022-04-29 18:49:22,620 [INFO] arrived
+2022-04-29 18:49:25,575 [INFO] Going to waypoint
+2022-04-29 18:49:50,095 [INFO] arrived
+2022-04-29 18:49:51,097 [INFO] Last waypoint reached
+2022-04-29 18:49:51,098 [INFO] Returning to home
+2022-04-29 18:49:51,113 [INFO] Staying connected, press Ctrl-C to exit
+2022-04-29 18:51:05,834 [INFO] Waiting for drone to connect...
+2022-04-29 18:51:05,847 [INFO] Drone discovered!
+2022-04-29 18:51:05,847 [INFO] Waiting for drone to have a global position estimate...
+2022-04-29 18:51:06,252 [INFO] Global position estimate ok
+2022-04-29 18:51:06,252 [INFO] -- Arming
+2022-04-29 18:51:06,300 [INFO] -- Taking off
+2022-04-29 18:51:19,263 [INFO] Going to waypoint
+2022-04-29 18:51:48,169 [INFO] arrived
+2022-04-29 18:51:50,112 [INFO] Going to waypoint
+2022-04-29 18:52:08,708 [INFO] arrived
+2022-04-29 18:52:11,821 [INFO] Going to waypoint
+2022-04-29 18:52:38,476 [INFO] arrived
+2022-04-29 18:52:39,668 [INFO] Going to waypoint
+2022-04-29 18:52:39,687 [INFO] arrived
+2022-04-29 18:52:42,833 [INFO] Going to waypoint
+2022-04-29 18:52:58,161 [INFO] arrived
+2022-04-29 18:53:01,124 [INFO] Going to waypoint
+2022-04-29 18:53:01,131 [INFO] arrived
+2022-04-29 18:53:04,019 [INFO] Going to waypoint
+2022-04-29 18:53:28,628 [INFO] arrived
+2022-04-29 18:53:29,633 [INFO] Last waypoint reached
+2022-04-29 18:53:29,633 [INFO] Returning to home
+2022-04-29 18:53:29,652 [INFO] Staying connected, press Ctrl-C to exit
+2022-04-29 19:01:42,981 [INFO] Waiting for drone to connect...
+2022-04-29 19:01:42,997 [INFO] Drone discovered!
+2022-04-29 19:01:42,997 [INFO] Waiting for drone to have a global position estimate...
+2022-04-29 19:01:43,168 [INFO] Global position estimate ok
+2022-04-29 19:01:43,169 [INFO] -- Arming
+2022-04-29 19:01:43,223 [INFO] -- Taking off
+2022-04-29 19:01:55,012 [INFO] Going to waypoint
+2022-04-29 19:02:24,235 [INFO] arrived
+2022-04-29 19:02:26,943 [INFO] Going to waypoint
+2022-04-29 19:02:58,764 [INFO] arrived
+2022-04-29 19:03:02,008 [INFO] Going to waypoint
+2022-04-29 19:03:23,516 [INFO] arrived
+2022-04-29 19:03:25,250 [INFO] Going to waypoint
+2022-04-29 19:03:25,286 [INFO] arrived
+2022-04-29 19:03:28,463 [INFO] Going to waypoint
+2022-04-29 19:03:45,632 [INFO] arrived
+2022-04-29 19:03:49,291 [INFO] Going to waypoint
+2022-04-29 19:03:49,299 [INFO] arrived
+2022-04-29 19:03:52,896 [INFO] Going to waypoint
+2022-04-29 19:04:21,723 [INFO] arrived
+2022-04-29 19:04:22,725 [INFO] Last waypoint reached
+2022-04-29 19:04:22,725 [INFO] Returning to home
+2022-04-29 19:04:22,738 [INFO] Staying connected, press Ctrl-C to exit
+2022-04-29 19:06:44,035 [INFO] Waiting for drone to connect...
+2022-04-29 19:06:44,043 [INFO] Drone discovered!
+2022-04-29 19:06:44,044 [INFO] Waiting for drone to have a global position estimate...
+2022-04-29 19:06:44,968 [INFO] Global position estimate ok
+2022-04-29 19:06:44,969 [INFO] -- Arming
+2022-04-29 19:06:45,033 [INFO] -- Taking off
+2022-04-29 19:06:58,093 [INFO] Going to waypoint
+2022-04-29 19:07:27,016 [INFO] arrived
+2022-04-29 19:07:29,233 [INFO] Going to waypoint
+2022-04-29 19:07:47,615 [INFO] arrived
+2022-04-29 19:07:51,225 [INFO] Going to waypoint
+2022-04-29 19:08:14,640 [INFO] arrived
+2022-04-29 19:08:15,929 [INFO] Going to waypoint
+2022-04-29 19:08:15,938 [INFO] arrived
+2022-04-29 19:08:18,939 [INFO] Going to waypoint
+2022-04-29 19:08:34,773 [INFO] arrived
+2022-04-29 19:08:37,548 [INFO] Going to waypoint
+2022-04-29 19:08:37,577 [INFO] arrived
+2022-04-29 19:08:40,567 [INFO] Going to waypoint
+2022-04-29 19:09:06,707 [INFO] arrived
+2022-04-29 19:09:07,710 [INFO] Last waypoint reached
+2022-04-29 19:09:07,710 [INFO] Returning to home
+2022-04-29 19:09:07,739 [INFO] Staying connected, press Ctrl-C to exit
